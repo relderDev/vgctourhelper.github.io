@@ -1,0 +1,46 @@
+.pokemon-type-sprites {
+  display: flex;
+}
+
+.pokemon-main-types {
+  display: flex;
+  border-right: solid 2px blue;
+  padding: 2px;
+}
+
+.pokemon-type {
+  width: var(--type-size);
+  height: var(--type-size);
+}
+
+.pokemon-header {
+  display: flex;
+}
+
+.pokemon-text.name {
+  width: 100%;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    color: var(--textColor);
+}
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.pokemon-teratype {
+  width: var(--type-size);
+  height: var(--type-size);
+  
+}
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --type-size: 32px;
+}
