@@ -1,0 +1,59 @@
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#vgc-tournament-helper-teamlist {
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: var(--teamlist-height);
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+
+.vgc-player {
+  margin: 0px 0px 5px 5px;
+  display: flex;
+  min-height: var(--player-min-height);
+  max-height: var(--player-max-height);
+  height: 100%;
+  align-items: stretch;
+}
+
+.vgc-team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vgc-player-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  background-color: var(--player-background-color);
+  border-radius: var(--global-border-radius);
+  text-wrap: nowrap;
+  flex-shrink: 0;
+  width: 20%;
+}
+
+.vgc-player-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--player-background-color);
+  border-radius: var(--global-border-radius);
+  box-sizing: border-box;
+}
+
+.vgc-player-score:empty {
+  display: none;
+}
