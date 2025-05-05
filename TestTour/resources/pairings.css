@@ -1,9 +1,25 @@
+.vgc-round-content {
+  max-width: 700px;
+  min-width: 500px;
+  width: 100%;
+}
 .vgc-match li {
   background-color: #dedede;
 }
 
 .vgc-match li.match-outcome-0 {
   background-color: transparent;
+}
+
+.vgc-matches li span {
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+  padding: 0px 20px;
+}
+.vgc-matches li span.player-2 {
+  flex-direction: row-reverse;
+  justify-self: flex-end;
 }
 
 .match-outcome-5 .player-1 {
@@ -19,4 +35,21 @@
 .match-outcome-2 .player-2 {
   color: green;
   font-weight: 600;
+}
+.vgc-round-title {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 16px;
+}
+.vgc-matches {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+.vgc-matches li {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 10% 45% 10% 45%;
+  align-items: center;
+  justify-items: center;
+  border-top: dotted 1px;
 }
