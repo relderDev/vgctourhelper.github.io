@@ -1,7 +1,3 @@
-.vgc-pairings {
-  font-family: var(--text-font);
-  font-size: var(--text-size);
-}
 .vgc-pairings-header {
   display: flex;
   flex-direction: row;
@@ -28,8 +24,4 @@
 }
 .vgc-round-content.vgc-round-active {
   display: block;
-}
-:root {
-  --text-font: sans-serif;
-  --text-size: 20px;
 }
