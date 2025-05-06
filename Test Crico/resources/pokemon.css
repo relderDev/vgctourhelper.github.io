@@ -5,6 +5,7 @@ img {
 
 .pokemon {
   width: calc(50% - 5px);
+  min-width: 370px;
   padding: 5px 5px 0px 0px;
   margin: 0px 0px 5px 5px;
   box-sizing: border-box;
@@ -47,6 +48,8 @@ img {
 
 .moves {
   width: 100%;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .pokemon-text {
@@ -61,6 +64,8 @@ img {
   width: 100%;
   background-color: var(--pokemon-name-background-color);
   border-radius: var(--global-border-radius);
+  font-size: 22px;
+  color: var(--pokemon-name-text-color);
 }
 
 .pokemon-teratype {
@@ -73,12 +78,15 @@ img {
   margin-top: -109%;
   padding: 3px;
   box-sizing: border-box;
+  width: 90%;
+  margin-left: 2px;
 }
 
 .pokemon-item-ability {
   display: flex;
   align-items: stretch;
   justify-content: flex-end;
+  font-size: 20px;
 }
 
 .item-sprite {
@@ -148,17 +156,12 @@ svg {
   --type-size: 32px;
   --move-type-size: 32px;
   --sprite-size: 128px;
-  --global-border-radius: 15px;
-  --player-background-color: #3F51B5;
-  --text-color: white;
-  --player-min-height: 60px;
-  --player-max-height: 90px;
-  --pokemon-background-color: antiquewhite;
-  --pokemon-name-background-color: #009688;);
-  --types-background-color: #95e598;
-  --ability-background-color: #2196F3;
-  --item-background-color: #607D8B;
-  --moves-background-color: #4826af;
-  --sprite-background-color: #00BCD4;
-  --teamlist-height: 1075px;
+  --pokemon-background-color: #FFFFFF;
+  --pokemon-name-background-color: #FDC447;
+  --pokemon-name-text-color: #A81E2E;
+  --types-background-color: #A81E2E;
+  --ability-background-color: #EB1C2C;
+  --item-background-color: #A81E2E;
+  --moves-background-color: #A81E2E;
+  --sprite-background-color: #FDC447;
 }

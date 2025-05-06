@@ -6,7 +6,7 @@
  */
 function activateContent(aIndex) {
   let content = document.getElementById('round-' + aIndex + '-content');
-  if (!content) return console.err('Could not find the round ' + aIndex + '.');
+  if (!content) return console.error('Could not find the round ' + aIndex + '.');
   return content.classList.add('vgc-round-active');
 }
 /**
@@ -39,7 +39,7 @@ function initializeRounds() {
   for (let item of headers) {
     item.addEventListener('click', activateRound);
     if (item.classList.contains('vgc-round-active'))
-      if (activeHeader) return console.err('Multiple active round headers');
+      if (activeHeader) return console.error('Multiple active round headers');
       else activeHeader = item;
   }
   return activateContent(activeHeader.getAttribute('index'));

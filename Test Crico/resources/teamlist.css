@@ -1,6 +1,6 @@
 body {
-  font-family: 'Source Sans 3', sans-serif;
-  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   color: var(--text-color);
   margin: 0;
   display: flex;
@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: var(--teamlist-height);
+  min-height: var(--teamlist-height);
   padding-top: 5px;
   box-sizing: border-box;
 }
@@ -25,11 +25,13 @@ body {
   max-height: var(--player-max-height);
   height: 100%;
   align-items: stretch;
+  font-size: 32px;
 }
 
 .vgc-team {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .vgc-player-score {
@@ -56,4 +58,13 @@ body {
 
 .vgc-player-score:empty {
   display: none;
+}
+
+:root {
+  --global-border-radius: 15px;
+  --player-background-color: #A81E2E;
+  --text-color: #FFFFFF;
+  --player-min-height: 60px;
+  --player-max-height: 90px;
+  --teamlist-height: 1075px;  
 }
